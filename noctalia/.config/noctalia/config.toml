@@ -59,7 +59,7 @@ order = [ "default" ]
         [bar.default.dead_zone]
 
 [battery]
-warning_threshold = 15
+warning_threshold = 10
 
 [brightness]
 enable_ddcutil = false
@@ -218,9 +218,12 @@ pre_action_fade_seconds = 2.0
 
 [keybinds]
 cancel = [ "Escape" ]
+copy = [ "Ctrl+c" ]
+delete = [ "Delete" ]
 down = [ "Down", "Ctrl+n" ]
 left = [ "Left" ]
 right = [ "Right" ]
+save = [ "Ctrl+s" ]
 tab_next = [ "Tab" ]
 tab_previous = [ "Shift+ISO_Left_Tab" ]
 up = [ "Up", "Ctrl+p" ]
@@ -459,7 +462,7 @@ enabled = []
 
 [shell]
 app_icon_colorize = false
-avatar_path = ""
+avatar_path = "/home/sharath/Pictures/Wallpapers/Profile/gintoki.jpg"
 button_borders = true
 card_borders = true
 clipboard_auto_paste = "auto"
@@ -518,6 +521,7 @@ time_format = "{:%H:%M}"
     clipboard_position = "center"
     control_center_placement = "attached"
     control_center_position = "auto"
+    floating_layer = "overlay"
     floating_offset = 8
     launcher_placement = "floating"
     launcher_position = "center"
@@ -553,6 +557,7 @@ time_format = "{:%H:%M}"
     freeze_screen = true
     pipe_command = ""
     pipe_to_command = false
+    remember_last_region = false
     save_to_file = true
     show_cursor = false
 
